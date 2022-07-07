@@ -1,4 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
 
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main {
+    width: 100%;
+  }
+}
 h1{
   font-family: Poppins;
   font-size: 700;
@@ -74,6 +90,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
+  border: 0;
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
@@ -119,21 +136,26 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
 
 .copyright{
   text-align: right;
-  margin-top: 10px;
+  margin-top: 100px;
+  margin-right: 100px;
   font-size: 15px;
+  letter-spacing: 2px;
 
 }
 
 .fa-facebook {
   color: white;
+  display: grid;
 }
 
 .fa-twitter {
   color: white;
+  display: inline-flex;
 }
 
 .fa-instagram {
   color: white;
+  display: flex;
 }
 
 .flow{
@@ -177,7 +199,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
   width: 400px;
   height: 400px;
   margin-left: 100px;
-  margin-top: 400px;
+  margin-top: 350px;
 
 }
 
@@ -185,8 +207,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
   position: absolute;
   top: 900px;
   left: 900px;
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
 
 
 }
@@ -194,10 +216,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
 
   border-radius: 20px;
   width: 80%;
-  height: inherit;
+  height: 50%;
   box-shadow: 3px 3px 3px 3px grey;
   margin: 50px auto auto auto;
-  box-sizing: border-box;
+  padding: 0;
+
 
 }
 
@@ -218,12 +241,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
 
 
 .social{
-  display: inline-block;
+ display: flex;
   margin-left: 200px;
-  margin-top: 0;
+
   padding: 20px;
   font-size: 30px;
-  width: 100px;
+
 
 }
 
@@ -249,5 +272,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='1440' height='718' xmlns
   width: 80%;
   box-shadow: 3px 3px 3px 3px grey;
   margin: 50px auto 200px auto;
+
+}
+.ul{
+  list-style-type: none;
+  line-height: 40px;
+  font-family: Open Sans;
+  font-size: 400;
+  display: inline-block;
+  margin-left: 200px
 
 }
