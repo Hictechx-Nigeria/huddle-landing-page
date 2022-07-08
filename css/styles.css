@@ -11,7 +11,7 @@
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .main {
+  .main, .logo, .banner, .btn, .build, .mobile, .grow-container, .grow, .grow-image {
     width: 100%;
   }
 }
